@@ -1,0 +1,38 @@
+/* 1. Body Styling (to center the button) */
+body {
+  /* This centers the button in the middle of the page */
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+/* 2. Button - Default State (Pink) */
+button {
+  /* Text Styling */
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem; /* Makes the text large */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Shape, Size, and Color */
+  padding: 20px 45px; /* Large padding for a big button */
+  border-radius: 30px;  /* This makes the corners very rounded */
+  background-color: #f76acb; /* Bright pink background */
+  border: 3px solid #d94fac;  /* Slightly darker pink border */
+  
+  /* Effects */
+  cursor: pointer; /* Shows a hand cursor on hover */
+  
+  /* This makes the color change smooth */
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* 3. Button - Hover State (Purple) */
+/* This code runs ONLY when the mouse is over the button */
+button:hover {
+  background-color: #a14786; /* Darker purplish-pink background */
+  border-color: #7b3365;     /* Even darker purple border */
+}
